@@ -7,20 +7,18 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 
-export default function TabTwoScreen() {
+export default function TripBuddyScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
+        <Image
+          source={require('@/assets/images/trip-buddy-placeholder.jpg')}
+          style={styles.banner}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">Trip Buddy</ThemedText>
       </ThemedView>
       <ThemedText>This app includes example code to help you get started.</ThemedText>
       <Collapsible title="File-based routing">
@@ -99,11 +97,19 @@ const styles = StyleSheet.create({
   headerImage: {
     color: '#808080',
     bottom: -90,
-    left: -35,
+    left: 0,
     position: 'absolute',
   },
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
+  },
+  banner: {
+    width: '100%',
+    // height: '',
+    top: 0,
+    left: 0,
+    position: 'absolute',
+    opacity: 1
   },
 });

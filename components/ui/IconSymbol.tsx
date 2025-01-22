@@ -13,6 +13,9 @@ const MAPPING = {
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  'bluetooth.log': 'blur-on',
+  'watch': 'watch',
+  'map': 'map',
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],
